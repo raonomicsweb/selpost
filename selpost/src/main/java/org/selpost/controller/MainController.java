@@ -18,13 +18,14 @@ public class MainController {
 	@Inject
 	private MainService ms;
 	
-	@RequestMapping("/main")
+	@RequestMapping("")
 	public String Main(@ModelAttribute("cri")Criteria cri, Model model) throws Exception {
 		cri.setPage(cri.getPage());
 		model.addAttribute("list", ms.listPage(cri));
 		model.addAttribute("pageMaker", ms.countPaging(cri).calcPage(cri));
 		return "main/main";
 	}
+	
 	@RequestMapping("/domestic")
 	public String domestic(Criteria cri, Model model)throws Exception{
 		return "main/domestic";
@@ -57,5 +58,6 @@ public class MainController {
 	public String forumList(Criteria cri, Model model)throws Exception{
 		return "main/forum";
 	}
+	
 	
 }

@@ -1,0 +1,271 @@
+section {
+    position: relative;
+    box-sizing: border-box;
+    margin: -148px 0 -100px;
+    padding: 148px 0 100px;
+    min-height: 100%;
+    overflow: hidden;
+}
+/* IE Hack */
+*html section{
+    height: 100%;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+}
+
+
+section article{
+    float: left;
+}
+section article#rank{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 255px;
+    min-height: 100%;
+    padding: 148px 22px 0 24px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    box-shadow: 1px 15px 10px -10px rgba(0,0,0,0.5), 2px 0px 14px rgba(0,0,0,0.2);
+}
+section article#rank .rank_nav{
+    padding: 38px 0 27px;
+    overflow:hidden;
+}
+section article#rank .rank_nav .content span{
+    display: inline-block;
+    font-size: 20px;
+}
+section article#rank .rank_nav .content img{
+    display: inline-block;
+    font-size: 20px;
+    width: 16px;
+    padding: 1px 15px;
+}
+section article#rank li{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+    font-size: 16px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+section article#rank li:HOVER {
+    text-decoration: underline;
+}
+
+
+
+
+section article#banner .rank_nav{
+    padding: 38px 0 27px;
+    overflow:hidden;
+}
+section article#banner .rank_nav .content span{
+    display: inline-block;
+    font-size: 20px;
+}
+section article#banner .rank_nav .content img{
+    display: inline-block;
+    font-size: 20px;
+    width: 16px;
+    padding: 1px 15px;
+}
+section article#banner li{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+    font-size: 16px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+section article#banner li:HOVER {
+    text-decoration: underline;
+}
+
+section article#banner{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 335px;
+    height: 100%;
+    padding: 148px 30px 0;
+    box-sizing: border-box;
+    /*background-color: aqua;*/
+}
+section article#banner .banner_box{
+    /*border: 1px solid #c4c1bf;*/
+
+    overflow:hidden;
+}
+section article#banner .banner_nav{
+    padding: 50px 0 19px;
+    overflow:hidden;
+}
+section article#banner .banner_nav .content{
+    display: inline-block;
+    font-size: 18pt;
+    font-weight: bold;
+    color: #464644;
+}
+
+
+section article#banner .item{
+    padding-bottom: 30px;
+    /*padding: 15px 0;*/
+}
+section article#banner li{
+    /*padding: 15px 0;*/
+}
+section article#banner div .thumbs_img{
+    width: 100%;
+    padding-bottom: 70%;
+    background-color: #5d5d5d;
+}
+section article#banner div .title{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 0 14px;
+    cursor: pointer;
+
+    color: #464644;
+}
+section article#banner div .sub_title{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+    font-size: 16px;
+    line-height: 1.7em;
+    padding-left: 5px;
+    cursor: pointer;
+}
+section article#banner div .title:HOVER, .sub_title:HOVER {
+    text-decoration: underline;
+}
+section article#content{
+    height: 100%;
+    width: calc(100% - 335px);
+    /*margin: 0 auto;*/
+    background-color: #f4f4f4;
+    padding: 34px 40px 500px 295px;
+    box-sizing: border-box;
+
+    box-shadow: 1px 15px 10px -10px rgba(0,0,0,0.5), 0px 0px 10px rgba(0,0,0,0.2);
+
+}
+section article#content .main_content{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    margin: 21px 0 40px;
+    padding: 26px 26px;
+
+    border-radius: 2px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    /*border-left: 1px solid #c4c1bf;*/
+    /*border-right: 1px solid #c4c1bf;*/
+}
+section article#content .page_content{
+    position: relative;
+    overflow: hidden;
+}
+section article#content .page_content .slide {
+    float: left;
+}
+section article#content .domestic .page_content .left_slide {
+    width: 60%;
+    padding-right: 15px;
+}
+section article#content .domestic .page_content .right_slide {
+    width: 40%;
+}
+section article#content .foreign .page_content .left_slide {
+    width: 40%;
+}
+section article#content .foreign .page_content .right_slide {
+    width: 60%;
+    padding-left: 15px;
+}
+section article#content .stock_market .item {
+    width: 25%;
+    padding-bottom: 30%;
+    position: relative;
+    overflow: hidden;
+}
+section article#content .stock_market .item div{
+    width: 100%;
+    position: absolute;
+}
+section article#content .stock_market .item .thumbs_img {
+    padding-bottom: 100%;
+    background-color: #404037;
+}
+section article#content .stock_market .item .title {
+    bottom: 0;
+}
+section article#content .slide1{
+    width: 100%;
+    padding-bottom: 70%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+
+    background-color: #5d5d5d;
+
+}
+section article#content .slide2{
+    width: 100%;
+    padding-bottom: 75%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+
+    background-color: #5d5d5d;
+}
+section article#content .nav_title{
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    padding-bottom: 55%;
+
+    font-size: 96px;
+    letter-spacing: -1px;
+    color: #c4c1bf;
+    font-weight: 900;
+}
+section article#content .stock_market .nav_title{
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+
+    width: 100%;
+    padding-bottom: 0;
+
+    font-size: 96px;
+    letter-spacing: -1px;
+    color: #c4c1bf;
+    font-weight: 900;
+}
+section article#content .nav_title span{
+    position: absolute;
+    bottom: 0;
+}
+section article#content .nav_title span.domestic{
+    right: 0;
+}
+section article#content .nav_title span.foreign{
+    left: 0;
+}
+

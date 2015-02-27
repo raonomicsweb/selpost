@@ -1,0 +1,104 @@
+/* 나눔고딕 폰트적용  */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);*/
+
+/* 초기화 코드  */
+html {
+    /*background-color: #313131;*/
+    height: 100%;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+* {margin: 0; padding:0; }
+*:focus { outline: 0; }
+body {
+    /*color: white;*/
+    /*padding: 20px;*/
+    height: 100%;
+    font-family:'Nanum Gothic','돋움';
+    background-color: #edeeee;
+    position: relative;
+}
+/* body {font-family:'Nanum Pen Script',monospace; } */
+li {list-style: none; }
+a {text-decoration: none; }
+img {border: 0; margin: 0; padding: 0;}        div {box-sizing: border-box;}
+header, nav, section, article, aside, footer, time, mark, summary, figure, figcapture, hgroup {
+    display: block;
+}
+header {
+    width: 100%;
+    height: 148px;
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+#header_content {
+    position: relative;
+    overflow: hidden;
+}
+#header_content #logo{
+    padding: 25px 0 12px;
+    width: 320px;
+    height: 106px;
+    margin: 0 auto;
+    font-size: 60px;
+    font-weight: bold;
+    color: #404037;
+}
+#header_content #gnb{
+    text-align: right;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+#header_content #gnb li{
+    display: inline-block;
+}
+
+#header_content #gnb a{
+    display: inline-block;
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 5px 15px;
+    color: #404037;
+}
+#header_content #gnb a:LAST-CHILD{
+    padding: 5px 0px 5px 15px;
+}
+#header_content #gnb .search{
+    text-align: right;
+}
+#header_content #gnb .search input{
+    height: 25px;
+}
+
+#lnb {
+    /*width: 96%;*/
+    /*margin: 0 auto;*/
+    box-sizing: border-box;
+    border-top: 2px solid #404037;
+    /*border-radius: 10px 0;*/
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    /*border-left: 1px solid #404037;*/
+    /*border-bottom: 1px solid #404037;*/
+}
+#lnb ul{
+    width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+}
+#lnb ul li{
+    float: left;
+}
+#lnb ul li > a{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 80px 11px;
+    color: #404037;
+}
