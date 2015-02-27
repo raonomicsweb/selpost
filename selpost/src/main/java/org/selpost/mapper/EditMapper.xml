@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.selpost.mapper.EditMapper">
+	<select id = "newsCategorySelect"  resultType="org.selpost.vo.CategoryVO"> 
+		select * from category where group_codeID = '0'
+	</select>
+	<select id = "newsCategorySecondSelect"  resultType="org.selpost.vo.CategoryVO"> 
+		select * from category where group_codeID = #{group_codeID}
+	</select>
+	<insert id="newsInsert" parameterType="org.selpost.vo.NewsVO">
+		insert into news (n_category, n_title, n_writer, n_content, n_thumImg, n_regDate, n_updateDate, n_summary, n_tag)values
+		                       (#{n_category}, #{n_title}, #{n_writer}, #{n_content}, #{n_thumImg}, #{n_regDate}, #{n_regDate}, #{n_summary}, #{n_tag})
+	</insert>
+	<insert id="tagCreate" parameterType="org.selpost.vo.TagVO">
+		insert into tag (tag_codeID, t_name)values(#{tag_codeID}, #{t_name})
+	</insert>
+	
+	<select id="tagList"  parameterType="org.selpost.vo.TagVO" resultType="org.selpost.vo.TagVO">
+		select * from tag where tag_codeID = #{tag_codeID}
+	</select>
+	
+	<select id="editTagList"  resultType="org.selpost.vo.TagVO">
+		select * from editor_tag
+	</select>
+	<insert id="editorTagCreate" parameterType="org.selpost.vo.TagVO">
+		insert into editor_tag (t_name)values(#{t_name})
+	</insert>
+	<delete id="editorTagDelete"   parameterType="org.selpost.vo.TagVO">
+		delete from editor_tag where t_no = #{t_no}
+	</delete>
+	<select id="lastNewsNo" resultType="java.lang.Integer">
+		SELECT AUTO_INCREMENT
+		FROM information_schema.TABLES
+		WHERE TABLE_SCHEMA = 'selpost'
+		AND TABLE_NAME = 'news'
+	</select>
+</mapper>

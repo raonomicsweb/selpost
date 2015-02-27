@@ -21,13 +21,13 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-<!-- 	<beans:bean id="multipartResolver" -->
-<!--         class="org.springframework.web.multipart.commons.CommonsMultipartResolver"> -->
+	<beans:bean id="multipartResolver"
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
  
 <!--          setting maximum upload size -->
-<!--         <beans:property name="maxUploadSize" value="100000000" /> -->
+        <beans:property name="maxUploadSize" value="100000000" />
  
-<!--     </beans:bean> -->
+    </beans:bean>
 	
 	<context:component-scan base-package="org.selpost.controller" />
 	
