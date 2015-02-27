@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("*")
+//@RequestMapping("*")
 public class MainController {
 
 	@Inject
 	private MainService ms;
 	
-	@RequestMapping("")
+	@RequestMapping("/main")
 	public String Main(@ModelAttribute("cri")Criteria cri, Model model) throws Exception {
 		cri.setPage(cri.getPage());
 		model.addAttribute("list", ms.listPage(cri));
@@ -27,35 +27,35 @@ public class MainController {
 	}
 	@RequestMapping("/domestic")
 	public String domestic(Criteria cri, Model model)throws Exception{
-		return "domestic/domestic";
+		return "main/domestic";
 	}
 	@RequestMapping("/foreign")
 	public String foreign(Criteria cri, Model model)throws Exception{
-		return "foreign/foreign";
+		return "main/foreign";
 	}
-	@RequestMapping("/stockmarket")
+	@RequestMapping("/stockMarket")
 	public String KOSPI(Criteria cri, Model model)throws Exception{
-		return "stockmarket/stockmarket";
+		return "main/stockMarket";
 	}
-	@RequestMapping("/economicterms")
+	@RequestMapping("/economicTerms")
 	public String economicterms(Criteria cri, Model model)throws Exception{
-		return "economicterms/economicterms";
+		return "main/economicTerms";
 	}
-	@RequestMapping("/collectiveissues")
+	@RequestMapping("/collectiveIssues")
 	public String issue(Criteria cri, Model model)throws Exception{
-		return "collectiveissues/collectiveissues";
+		return "main/collectiveIssues";
 	}
-	@RequestMapping("/collectiveissues/list")
+	@RequestMapping("/collectiveIssues/list")
 	public String issueList(Criteria cri, Model model)throws Exception{
-		return "collectiveissues/collectiveissues";
+		return "main/collectiveIssues";
 	}
 	@RequestMapping("/forum")
 	public String forum(Criteria cri, Model model)throws Exception{
-		return "forum/forum";
+		return "main/forum";
 	}
 	@RequestMapping("/forum/list")
 	public String forumList(Criteria cri, Model model)throws Exception{
-		return "forum/forum";
+		return "main/forum";
 	}
 	
 }
