@@ -56,7 +56,7 @@ public class MainController {
 	}
 	@RequestMapping("/forum/list")
 	public String forumList(Criteria cri, Model model)throws Exception{
-		return "main/forum";
+		return "main/forumList";
 	}
 	
 	

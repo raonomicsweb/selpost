@@ -475,8 +475,8 @@
     font-size: 12px;
 }
 
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ리스트ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/* �▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫��
+�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫由ъ뒪�멥뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫�▲뀫*/
 
 .forum table.list {
     width: 100%;
@@ -507,11 +507,13 @@
     padding-top: 28px;
 }
 .forum table.list td.title .title_con {
-
+	overflow: hidden;	
+}
+.forum table.list td.title .title_con div {
+	margin: 5px 0 0 0;
+	float: left;
 }
 .forum table.list td.title .title_con a{
-
-    display: inline-block;
     cursor: pointer;
 
     font-size: 18px;
@@ -520,7 +522,7 @@
     line-height: 1.3em;
 
     /*border-bottom: 2px solid #5f8a95;*/
-
+	vertical-align: text-bottom;
     transition-property: color, border-bottom;
     transition-duration: 0.3s ;
 
@@ -538,16 +540,16 @@
     background-image: url("../img/hot.svg");
     background-repeat: no-repeat;
     background-size: 50px 28px;
-    padding-top: 10px;
+    padding-top: 2px;
     margin: 0 0 0 8px;
     /*line-height: 50px;*/
     text-align: center;
     color: #ffffff;
     font-weight: bold;
-    display: inline-block;
 }
 
 .forum table.list td.title .writer{
+	margin-top: 3px;
     font-size: 14px;
     color: #8c8c87;
 }
